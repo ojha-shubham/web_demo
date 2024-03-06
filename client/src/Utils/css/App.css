@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color:#f7f7f7;
+}   
+
+h2 {
+    font-size: 26px;
+    margin: 1rem;
+    color: #111111;
+    font-weight: bold;   
+}
+
+p{
+    font-size: 14.5px;
+    padding: 2px;
+}
+
+header {
+    background-color: #1A244D;
+    padding: 10px 20px;
+}
+
+
+header .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img {
+    height: 75px;
+    display: block;
+}
+
+
+/* about section */
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #1a244d;
+    height: 60vh;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    width: 30%;
+    background-color:#FFCC57;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    height: 50vh;
+    margin: 0 1.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Style the service section container */
+.service-container{
+    margin: 0 3rem;
+}
+.service-section {
+    background-color: #FFCC57;
+    padding: 40px 0;
+}
+
+/* Style the services grid */
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style individual service items */
+.service-item {
+    display: flex;
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style service icons */
+.service-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #007bff;
+    /* Adjust the color as needed */
+}
+
+/* Style headings */
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+/* Style paragraphs */
+.service-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    /* Adjust the color as needed */
+}
+/* Home.css */
+.home-page {
+    background-image: url("../images/backgraund.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+
+.center-content {
+    text-align: left;
+    color: #FFCC57;
+    font-weight: bold;
+    margin-left: 450px;
+    padding: 180px
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFCC57;
+}
+
+.btn{
+    background-color: #FFCC57;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: left 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.show {
+    left: 0 !important;
+}
+
+.hide-scroll {
+    overflow: hidden;
+}
+
+.navbar ul {
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+.navbar ul a {
+    all: unset;
+    color:#FFCC57;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 8px;
+    box-shadow: 0px 2px 4px #FFCC57(0, 0, 0, 0.2);
+}
+.navbar ul a:hover {
+    color: #111111;
+    /* text-decoration: underline overline; */
+    text-decoration-thickness: 3px;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.close-nav button {
+    all: unset;
+    background: #f7f7f7;
+    font-size: 42px;
+    cursor: pointer;
+    padding: 15px;
+}
+.close-nav button:hover {
+    color: #222222;
+    background: white;
+}
+
+.menu-bar button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f7f7f7;
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menu-bar i::after {
+    display: block;
+    content: "";
+    border-top: 3px solid #444444;
+    margin: 6px 0;
+}
+.menu-bar button:hover {
+    background: white;
+}
+.menu-bar button:hover i {
+    border-color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Add this CSS to your stylesheet or inline styles in React */
+
+.service-container {
+    margin: 20px;
+}
+
+.section-title {
+    color: #074da2;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardimg {
+    overflow: hidden;
+}
+
+.cardimg a {
+    display: block;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.servbx {
+    padding: 20px;
+}
+
+.card-title {
+    color: #074da2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #333;
+}
+
+.btn-lnks {
+    display: inline-flex;
+    align-items: center;
+    color: #074da2;
+    text-decoration: none;
+}
+
+.btn-lnksprimary {
+    margin-top: 10px;
+}
+
+.btn-lnks svg {
+    margin-left: 5px;
+}
+/* Footer.css */
+footer {
+    background-color: #1A244D;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 250px;
+    /* Adjust the logo size as needed */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1A244D;
+}
+
+@media (min-width: 550px) {
+    .navbar {
+        all: unset;
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .navbar ul a {
+        font-size: inherit;
+    }
+    .close-nav,
+    .menu-bar {
+        display: none;
+    }
+}
