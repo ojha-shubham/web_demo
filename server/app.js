@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 var app = express();
 
 app.use('/images', express.static('./images'));
-app.get("/", (req, res) => {
+app.get("/getmoduls", (req, res) => {
   res.json({ servicename: "first app module" });
 });
 app.use(cors()) // enable cors

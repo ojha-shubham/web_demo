@@ -1,0 +1,26 @@
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-info p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.contact-info strong {
+  width: 140px;
+  display: inline-block;
+  color: #444;
+}
+
+.contact-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+}
